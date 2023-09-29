@@ -6,12 +6,12 @@ int main(void)
     world_t *world = init_world();
     entity_t me = {
         .name = "Mathieu Barral",
-        .age = 20,
+        .age = 21,
         .country = "France",
         .city = "Montpellier",
         .job = "Student",
         .school = "Epitech",
-        .skills = {"C", "C++", "Asm", "Go", "Zig", "Rust", "Python"},
+        .skills = {"C", "C++", "Asm", "Go", "Zig", "Python"},
         .interest = {
             "system",
             "low-level",

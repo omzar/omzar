@@ -3,15 +3,15 @@
 
 int main(void)
 {
-    env_t *world = init_world();
+    world_t *world = init_world();
     entity_t me = {
-        .name = strdup("Mathieu Barral"),
+        .name = "Mathieu Barral",
         .age = 20,
-        .country = strdup("France"),
-        .city = strdup("Montpellier"),
-        .job = strdup("Student"),
-        .school = strdup("Epitech"),
-        .skills = {"C", "C++", "Asm", "Rust", "Java", "Python", "Haskell"},
+        .country = "France",
+        .city = "Montpellier",
+        .job = "Student",
+        .school = "Epitech",
+        .skills = {"C", "C++", "Asm", "Go", "Zig", "Rust", "Python"},
         .interest = {
             "system",
             "low-level",
@@ -19,7 +19,7 @@ int main(void)
             "cybersecurity",
             "devops"
         },
-        .gpg_key_id = strdup("2EDD165AFD467745")
+        .gpg_key_id = "2EDD165AFD467745"
     };
 
     push_to_world(world, &me);
